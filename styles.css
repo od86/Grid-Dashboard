@@ -49,7 +49,7 @@ body {
   padding: 20px 32px 16px 32px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
   color: #F8F5F1;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .search-bar {
-  width: 60%;
+  width: 80%;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -70,7 +70,7 @@ body {
 }
 
 input {
-  width: 75%;
+  width: 30%;
   height: 26px;
   border: none;
   border-radius: 25px;
@@ -149,5 +149,86 @@ input {
 .main-content {
   background-color: #D8A23A;
   grid-column: 2 / -1;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects-container {
+  background-color: aqua;
+  grid-row: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px 16px 11px;
+}
+
+.projects-title {
+  font-size: 1.5rem;
+}
+
+.projects {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  gap: 16px;
+}
+
+.project {
+  background-color: #C7422A;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.project-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project > p:first-child {
+  font-size: 1.5rem;
+}
+
+.project > p:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+.project-icons > svg {
+  width: 30px;
+}
+
+.announcements {
+  background-color: chocolate;
+}
+
+.trending {
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+}
+
+.people > img {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.people-info {
+  padding-left: 12px;
+}
+
+.people-info > p:first-child {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
