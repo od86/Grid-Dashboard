@@ -17,9 +17,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
   grid-row: 1 / -1;
-  background: red;
+  background: #C7422A;
+  color: #222222;
 }
 
 .sidebar-navigation-link {
@@ -30,39 +30,124 @@ body {
   padding-left: 32px;
 }
 
-.sidebar-navigation-link > svg {
-  width: 35px;
-}
+.sidebar-navigation-link > svg { width: 35px; }
+.sidebar-navigation-link > p { font-size: 1.2rem; }
 
-.sidebar-navigation-link > p {
-  font-size: 1.2rem;
-}
-
-#sidebar-title {
-  padding: 24px 0px 8px 24px;
-}
-
-#sidebar-title > svg {
-  width: 46px;
-}
+#sidebar-title { padding: 24px 0px 8px 24px; }
+#sidebar-title > svg { width: 46px; }
 
 #sidebar-title > p {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-
-#final-user-option {
-  padding-bottom: 48px;
-}
+#final-user-option { padding-bottom: 48px; }
 
 .navbar {
-  background-color: green;
+  background-color: #6F8F3D;
   grid-column: 2 / -1;
+  padding: 20px 32px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #F8F5F1;
+}
+
+.top-nav-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar > svg {
+  width: 30px;
+}
+
+input {
+  width: 75%;
+  height: 26px;
+  border: none;
+  border-radius: 25px;
+  background-color: #464646;
+}
+
+.account-options {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.account-options > svg {
+  width: 30px;
+}
+
+.account-options > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.account-options > p {
+  font-size: 1.3rem;
+}
+
+.bottom-nav-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-info {
+  display: flex;
+  gap: 12px;
+}
+
+.account-info > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.account-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.account-welcome > p:first-child {
+  font-size: 0.9rem;
+}
+
+.account-welcome > p:last-child {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.user-features {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.user-features > button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #464646;
+  color: #F8F5F1;
 }
 
 .main-content {
-  background-color: blue;
+  background-color: #D8A23A;
   grid-column: 2 / -1;
 }
 
